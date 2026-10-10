@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0ff;
+    margin: 0;
+    padding: 30px;
+    color: #303775;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fafaff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #d5d5ff;
+}
+
+header {
+    background: linear-gradient(120deg, #9993f7, #7569dc);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.input-area {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 2px solid #d0ccff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #7064dc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.tasks {
+    background: white;
+    margin: 0 25px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #eeeeff;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#count {
+    background: #e6e3ff;
+    color: #5949cf;
+    padding: 5px 12px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f2f3ff;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+li input {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    accent-color: #7064dc;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li span.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background: #ff5875;
+    padding: 9px 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #5949cf;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .input-area {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .tasks {
+        margin: 0 15px;
+        padding: 12px;
+    }
+
+    li {
+        gap: 7px;
+        padding: 8px;
+    }
+
+    li button {
+        padding: 8px;
+    }
+}
+
+.banner-image {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: #fff8f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(70, 40, 80, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+    transform: scale(1.05);
+}
+
+
+header a {
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: none;
+}
